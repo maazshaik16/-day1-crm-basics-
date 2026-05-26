@@ -1,0 +1,211 @@
+# Day 6 - Triggers and SOQL
+
+## 1. What is SOQL?
+
+SOQL (Salesforce Object Query Language) is used to retrieve data from Salesforce objects.
+
+It is similar to SQL but works specifically with Salesforce data.
+
+### Example Uses
+- Find all students in a course
+- Find students with low attendance
+- Find courses handled by a faculty member
+
+SOQL helps Salesforce applications search and display records quickly.
+
+---
+
+## 2. What is an Apex Trigger?
+
+An Apex Trigger is a piece of code that runs automatically when data changes in Salesforce.
+
+Triggers execute before or after events like:
+- Insert
+- Update
+- Delete
+
+Triggers help automate business logic.
+
+### Example
+After a student registers:
+- Send a welcome email
+- Update seat count
+- Notify faculty
+
+---
+
+## 3. Difference Between Flow vs Trigger
+
+| Flow | Apex Trigger |
+|------|---------------|
+| No-code automation | Code-based automation |
+| Easy to create | Requires programming |
+| Best for simple logic | Best for complex logic |
+| Faster development | More powerful and flexible |
+| Limited for advanced operations | Supports advanced business logic |
+
+---
+
+## 4. Difference Between Before vs After Trigger
+
+| Before Trigger | After Trigger |
+|----------------|---------------|
+| Runs before data is saved | Runs after data is saved |
+| Used for validation and updating values | Used for notifications and related actions |
+| Faster for modifying records | Useful for actions after record creation |
+
+### Example
+- Before Insert → Validate student age
+- After Insert → Send welcome email
+
+---
+
+## 5. Trigger Use Cases
+
+### 1. After Student Registration
+**Trigger Event:** After Insert
+
+Action:
+- Send welcome email to student
+
+Reason:
+- Automatically welcomes new students.
+
+---
+
+### 2. After Course Becomes Full
+**Trigger Event:** After Update
+
+Action:
+- Notify faculty that seats are filled
+
+Reason:
+- Helps faculty manage admissions.
+
+---
+
+### 3. After Attendance Drops Below 75%
+**Trigger Event:** After Update
+
+Action:
+- Send warning notification to student
+
+Reason:
+- Improves attendance monitoring.
+
+---
+
+### 4. After Fee Payment
+**Trigger Event:** After Update
+
+Action:
+- Update payment status automatically
+
+Reason:
+- Keeps financial records accurate.
+
+---
+
+### 5. After Student Course Change
+**Trigger Event:** After Update
+
+Action:
+- Update related attendance records
+
+Reason:
+- Maintains correct student-course mapping.
+
+---
+
+## 6. Flow vs Trigger Thinking
+
+| Scenario | Use Flow or Trigger? | Reason |
+|----------|----------------------|--------|
+| Simple email notification | Flow | Easy no-code automation |
+| Complex fee eligibility check | Apex Trigger | Requires advanced logic |
+| Updating related records | Flow | Simple record updates |
+| External API integration | Apex Trigger | Requires coding and API calls |
+
+---
+
+## 7. Query Examples
+
+### Student Queries
+- Find all students in Course A
+- Find students with attendance below 75%
+- Find students who have unpaid fees
+
+### Course Queries
+- Find all courses handled by Faculty X
+- Find courses with available seats
+- Find courses with more than 50 students
+
+### Faculty Queries
+- Find faculty teaching multiple courses
+- Find faculty assigned to Computer Science department
+
+---
+
+## 8. Reflection
+
+Enterprise systems need event-driven behavior because actions must happen automatically whenever data changes.
+
+Examples:
+- Notifications
+- Record updates
+- Alerts
+- Approval processes
+
+Without automation, employees would need to do everything manually, which increases:
+- Errors
+- Delays
+- Workload
+
+Triggers and Flows help systems react intelligently to business events in real time.
+
+---
+
+# Reflective Questions
+
+## 1. Why do systems need triggers?
+Triggers help systems respond automatically to data changes and automate business processes.
+
+---
+
+## 2. Difference between polling and event-driven systems?
+
+| Polling | Event-Driven |
+|---------|---------------|
+| Checks repeatedly for updates | Reacts instantly to events |
+| Slower and inefficient | Faster and efficient |
+
+---
+
+## 3. Why are database queries important?
+Queries help retrieve and manage data quickly from large databases.
+
+---
+
+## 4. When should Flows be preferred over Triggers?
+Flows should be preferred for simple automation because they are easier to maintain and require no coding.
+
+---
+
+## 5. What problems happen if automation logic becomes too complex?
+Complex automation becomes difficult to maintain, debug, and understand.
+
+---
+
+## 6. Why should developers think carefully before automating actions?
+Poor automation design can create unnecessary actions, errors, and performance problems.
+
+---
+
+# Conclusion
+
+Today’s concepts explain how Salesforce stores, retrieves, and reacts to data changes using:
+- SOQL
+- Flows
+- Apex Triggers
+
+These tools help enterprise systems automate processes and respond intelligently to business events.
