@@ -1,0 +1,102 @@
+# Day 3 - Data Modeling
+
+## 1. Difference Between App, Object, Record, and Field
+
+### App
+An app is a collection of related tools and objects used for specific work.
+
+**Example:**  
+A College Management App can contain:
+- Student details
+- Faculty details
+- Attendance details
+
+---
+
+### Object
+An object is like a table that stores similar types of information.
+
+**Example:**  
+Student Object stores all student-related data.
+
+---
+
+### Record
+A record is a single entry inside an object.
+
+**Example:**  
+One student’s information such as:
+- Name
+- Roll Number
+- Branch
+
+is one record.
+
+---
+
+### Field
+A field is a single piece of information inside a record.
+
+**Example:**  
+- Student Name
+- Phone Number
+- Email
+
+are fields.
+
+---
+
+## 2. Standard vs Custom Objects
+
+### Standard Objects
+Standard objects are already provided by Salesforce.
+
+**Examples:**
+- Account
+- Contact
+- Lead
+
+These are commonly used in many companies.
+
+---
+
+### Custom Objects
+Custom objects are created by users based on business needs.
+
+**Examples:**
+- Student
+- Faculty
+- Course
+
+These are created to store custom data.
+
+---
+
+## 3. My College Data Model
+
+### Objects
+- Student
+- Faculty
+- Course
+- Attendance
+
+### Relationships
+- One faculty teaches many courses.
+- One course has many students.
+- One student has many attendance records.
+
+### Diagram
+Faculty → Course → Student → Attendance
+
+---
+
+## 4. Formula Fields
+
+Formula fields automatically calculate values using formulas.
+
+### Example
+If total marks are 500 and a student scored 450, percentage can be calculated automatically.
+
+### Formula
+```text
+(450/500)*100
