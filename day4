@@ -1,0 +1,106 @@
+what is flow builder
+
+flow builder in :contentReference[oaicite:0]{index=0} is a tool used to automate tasks and business processes without writing code.  
+it works using drag and drop elements like screens, actions, decisions and loops.  
+it helps companies reduce manual work and save time.
+
+example:  
+when a student fills a registration form, flow builder can automatically create a record and send a confirmation email.
+
+
+types of flows
+
+screen flow
+
+screen flow is used to interact with users by showing screens where they can enter information.
+
+features:
+- takes user input
+- shows forms and buttons
+- works like a step by step application
+
+example:  
+college admission form where students enter their details and submit them.
+
+
+record triggered flow
+
+record triggered flow runs automatically when a record is created, updated or deleted.
+
+features:
+- runs automatically
+- no user interaction needed
+- works in background
+
+example:  
+when a new employee record is created, a welcome email is automatically sent.
+
+
+automation ideas
+
+1. student attendance alert  
+if attendance goes below 75%, automatically send warning email to student.
+
+2. library reminder  
+send reminder before book due date automatically.
+
+3. placement registration  
+when student registers for placements:
+- create student record
+- send confirmation email
+
+4. leave approval system  
+when employee applies leave:
+- manager gets notification
+- leave status updates automatically
+
+5. fee payment reminder  
+send reminder messages to students who did not pay fees before deadline.
+
+
+flow diagram
+
+example flow:
+
+start  
+↓  
+student registers  
+↓  
+create record  
+↓  
+send confirmation email  
+↓  
+end
+
+you can draw the flow diagram using draw.io, powerpoint or by hand and upload the image.
+
+
+manual vs automated process
+
+manual process:
+- takes more time
+- more human errors
+- repeated manual work
+- slow process
+- needs more effort
+
+automated process:
+- saves time
+- less errors
+- runs automatically
+- faster process
+- reduces work
+
+
+reflection
+
+automation is important in enterprise systems because it helps companies save time and improve productivity.  
+it reduces manual work and helps employees focus on important tasks.
+
+with automation:
+- work becomes faster
+- data becomes accurate
+- notifications are sent quickly
+- business processes become smooth
+
+large companies use automation to manage thousands of records and daily operations easily.
