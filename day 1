@@ -1,0 +1,25 @@
+1. What is Salesforce Platform?
+
+The Salesforce Platform is basically a place where you can 
+build entire business applications — without needing to write 
+code for everything. It runs on the cloud, so nothing is 
+installed on your computer..
+
+2)What is an App?
+
+a collection of objects,tools,tabs that are grouped together for business purpose
+
+object - it is place where we can store specific type of information like a table
+
+tab - these are present at the top of the website ,it is cilckable button that opens an object
+
+3)configuration -  use when the requirement is standard, straightforward, and salesforce already has a tool for it.
+  code - use when the requirement is complex, involves custom logic, conditions across multiple objects
+
+4)My system design:
+   App name - college management
+   objects - Student,Course,Faculty,Attendance,Fee Payment 
+   user interaction - admissions person opens a simple form, fills in the student details one by one, and hits save
+                      teachers go to the attendance tab every day and just mark who showed up to class
+                      accounts team types in how much fee was paid, and the app itself calculates how much is still left
+                      principal just opens the dashboard and can see everything happening in the college in one place
