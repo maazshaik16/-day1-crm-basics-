@@ -1,0 +1,182 @@
+# Day 12 - Salesforce DX & Developer Workflow
+
+## 1. What is Salesforce DX?
+
+Salesforce DX (Developer Experience) is a modern development approach that helps teams build, test, and deploy Salesforce applications in a structured way.
+
+It is source-driven, meaning code is stored and managed in tools like GitHub.
+
+It helps developers:
+- Work in teams
+- Track changes
+- Deploy safely
+- Manage environments (sandbox, production)
+
+---
+
+## 2. Why CLI Matters
+
+Salesforce CLI (Command Line Interface) helps developers interact with Salesforce using terminal commands instead of clicks.
+
+### Benefits:
+- Faster development
+- Automation of tasks
+- Easier deployment
+- Better control over orgs and code
+
+CLI improves developer productivity and reduces manual work.
+
+---
+
+## 3. Why GitHub Matters
+
+GitHub is a version control system used to store and manage code.
+
+### Benefits:
+- Tracks code changes
+- Allows collaboration
+- Supports branching and merging
+- Enables rollback to previous versions
+
+It ensures safe and organized development in teams.
+
+---
+
+## 4. Team Collaboration Problems (Without Proper Tools)
+
+If 10 developers work without version control:
+
+- Code overwriting happens
+- Conflicts in changes
+- No history of updates
+- Hard to debug issues
+- No proper deployment tracking
+- Risk of breaking production system
+
+Without branches, everyone works on the same code → chaos.
+
+---
+
+## 5. Why Developers Use GitHub, CLI, and DX
+
+Professional developers use these tools instead of browser clicks because:
+
+- Browser clicks are slow and not scalable
+- Large projects require automation
+- Teams need collaboration
+- Changes must be tracked
+- Deployment must be controlled
+- Errors must be reversible
+
+These tools create a structured engineering workflow.
+
+---
+
+## 6. College Assignments vs Enterprise Development
+
+| College Assignments | Enterprise Software |
+|---------------------|---------------------|
+| Single developer | Multiple teams |
+| No version control | GitHub used |
+| Manual submission | Automated deployment |
+| No rollback needed | Rollback required |
+| Simple logic | Complex business systems |
+| No collaboration issues | Strict collaboration rules |
+
+Enterprise systems require reliability, testing, and coordination across teams.
+
+---
+
+## 7. Real Engineering Thinking
+
+Enterprise software development focuses on:
+
+- Testing before deployment
+- Collaboration between teams
+- Controlled deployment process
+- Rollback in case of failure
+- High system reliability
+- Handling large-scale users
+
+Unlike simple assignments, enterprise systems must never break in production.
+
+---
+
+## 8. Reflection
+
+After learning Salesforce workflow, I realized that professional software engineering is not just about writing code.
+
+It is about:
+- Working in teams
+- Managing versions
+- Deploying safely
+- Maintaining system stability
+- Ensuring scalability
+- Handling real-world business requirements
+
+Tools like DX, CLI, and GitHub are essential because they make enterprise development structured, safe, and reliable.
+
+---
+
+# Revision Questions
+
+## 1. Why do enterprise teams use version control?
+To track changes and collaborate safely without overwriting code.
+
+---
+
+## 2. Why is deployment workflow important?
+It ensures code is tested and safely moved to production.
+
+---
+
+## 3. What problems happen without collaboration tools?
+Code conflicts, data loss, and system instability.
+
+---
+
+## 4. Why is Salesforce DX important?
+It enables modern, source-driven, team-based development.
+
+---
+
+## 5. Why do developers prefer CLI tools?
+They are faster, automated, and more powerful than UI clicks.
+
+---
+
+## 6. Why do enterprise systems require rollback capability?
+To restore system state if something breaks after deployment.
+
+---
+
+## 7. Why should teams separate development and production?
+To avoid affecting real users with untested changes.
+
+---
+
+## 8. Why is source-driven development useful?
+It keeps code organized, trackable, and team-friendly.
+
+---
+
+## 9. Why is collaboration difficult in large projects?
+Because many developers work on the same system at the same time.
+
+---
+
+## 10. Why is engineering workflow important?
+It ensures reliability, scalability, and structured development in enterprise systems.
+
+---
+
+# Conclusion
+
+Today I learned:
+- How Salesforce DX works
+- Why CLI is important
+- Why GitHub is essential for teams
+- How enterprise collaboration works
+- How professional software engineering is structured
+
+This day showed how real-world Salesforce development happens in large companies.
