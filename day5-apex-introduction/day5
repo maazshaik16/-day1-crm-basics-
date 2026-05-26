@@ -1,0 +1,100 @@
+# Day 5 - Apex Introduction
+
+## 1. What is Apex?
+
+Apex is a programming language developed by Salesforce. It is used to add custom business logic to Salesforce applications.
+
+Apex helps developers:
+- Automate complex processes
+- Perform calculations
+- Integrate external systems
+- Apply advanced business rules
+
+It works similar to Java and runs on the Salesforce platform.
+
+---
+
+## 2. Difference Between Flow vs Apex
+
+| Flow | Apex |
+|------|------|
+| No-code or low-code tool | Programming language |
+| Easy to build using drag-and-drop | Requires coding knowledge |
+| Best for simple automation | Best for complex logic |
+| Faster development | More flexible and powerful |
+| Limited for advanced scenarios | Handles advanced requirements |
+
+---
+
+## 3. Difference Between Configuration vs Coding
+
+| Configuration | Coding |
+|---------------|--------|
+| Uses clicks and setup | Uses programming |
+| Easy to maintain | More customizable |
+| Used for standard business processes | Used for complex logic |
+| Examples: Flows, Validation Rules | Examples: Apex, Triggers |
+
+---
+
+## 4. Real Examples Where Apex Is Needed
+
+### Example 1 – Complex Fee Calculation
+A college may calculate fees using:
+- Scholarship
+- Attendance
+- Category
+- Late payment charges
+
+This logic becomes too complex for Flow.
+
+### Example 2 – Payment Gateway Integration
+If Salesforce needs to connect with an external payment system like Razorpay or PayPal, Apex is required to call APIs and process responses.
+
+### Example 3 – Advanced Eligibility Logic
+If student eligibility depends on:
+- Attendance percentage
+- Internal marks
+- Backlogs
+- Course prerequisites
+
+Apex is needed because the logic is complex and dynamic.
+
+---
+
+## 5. Integrated College Management System
+
+### CRM
+Salesforce CRM is used to manage student and college information.
+
+---
+
+### Objects
+- Student
+- Faculty
+- Course
+- Attendance
+
+---
+
+### Relationships
+- One faculty teaches many courses.
+- One course has many students.
+- One student has many attendance records.
+
+---
+
+### Validation Rules
+Examples:
+- Email field is mandatory.
+- Student age should be greater than 16.
+- Phone number must contain 10 digits.
+
+---
+
+### Formula Fields
+Formula fields automatically calculate values.
+
+Example:
+```text
+(Obtained Marks / Total Marks) * 100
